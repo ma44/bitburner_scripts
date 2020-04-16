@@ -1,0 +1,32 @@
+/*
+tprints a list of all located server names, including with "'" at begin and end
+*/
+tprint("[starting server scraper]");
+
+var servers = [];
+
+scan("home", true).forEach(recursive_add);
+
+function recursive_add(server_name){
+    if(!getServerMaxMoney(server_name)){
+        return;
+    }
+    if(servers.includes(server_name)){
+        return;
+    }
+    servers.push(server_name);
+    scan(server_name, true).forEach(recursive_add);
+}
+
+tprint("[server list without ' included]");
+tprint(servers);
+tprint("[server list with ' included]");
+for(var i = 0; i < servers.length; i++){
+    servers[i] = add_single_quote(servers[i]);
+}
+tprint(servers);
+tprint("[end server scrapper]");
+
+function add_single_quote(the_string){
+    return "'" + the_string + "'";
+}
