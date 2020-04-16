@@ -1,0 +1,11 @@
+//var servers = new["foodnstuff",sigma-cosmetics,max-hardware,phantasy,netlink,rothman-uni,summit-uni,rho-construction,aerocorp,deltaone,joesguns,hong-fang-tea,zer0,silver-helix,the-hub,zb-institute,johnson-ortho,catalyst,millenium-fitness,harakiri-sushi,nectar-net,neo-net,crush-fitness,omega-net,comptek,syscore,iron-gym]
+
+var servers = ['foodnstuff','sigma-cosmetics','max-hardware','phantasy','netlink','rothman-uni','summit-uni','rho-construction','aerocorp','deltaone','joesguns','hong-fang-tea','zer0','silver-helix','the-hub','zb-institute','johnson-ortho','catalyst','millenium-fitness','harakiri-sushi','nectar-net','neo-net','crush-fitness','omega-net','comptek','syscore','iron-gym'];
+
+servers.forEach(hack);
+
+function hack(server_name){
+    if
+    run("nuke.script", 1, server_name);
+    run("weaken.script", 1, server_name);
+}
